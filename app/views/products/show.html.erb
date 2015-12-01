@@ -1,0 +1,18 @@
+<div class="container-fluid">
+   <div class="change">
+   
+   
+    <h2>Name: <%= @product.name %> </h2>
+    <img><%= image_tag @product.image %>
+    <h4><%= @product.description %></h4>
+    <p><%= @product.price %></p>
+    
+    <div >
+     <%= link_to "Edit this product", "/products/#{@product.id}/edit" %>
+     <%= link_to "Delete this product","/products/#{@product.id}", method: :delete %>
+     <%= link_to "Back to Home", "/products" %>
+     </div>
+
+    
+ </div>
+</div>
